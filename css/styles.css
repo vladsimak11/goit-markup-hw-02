@@ -1,12 +1,15 @@
 :root {
   --title-color: #212121;
   --text-color: #757575;
-  --link-color: #2196f3;
+  --link-color: #2196F3;
+  --white-color: #ffffff;
 }
 
 body {
   color: var(--text-color);
+  background-color: var(--white-color);
 
+  font-size: 14px;
   font-family: 'Roboto', sans-serif;
   letter-spacing: 0.03em;
 }
@@ -39,10 +42,9 @@ button:hover {
   color: var(--link-color);
 }
 
-.contacts .link
+.contacts .link,
 .main-nav .link {
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
 }
@@ -52,7 +54,7 @@ button:hover {
 }
 
 .link:hover,
-.link:active, 
+.link:focus,
 .link.active {
   color: var(--link-color);
 }
@@ -60,9 +62,12 @@ button:hover {
 /* Main */
 
 /* Hero */
+.hero {
+  background-color: #2F303A;
+}
 
 .hero h1 {
-  color: #000000;
+  color: var(--white-color);
 
   font-weight: 900;
   font-size: 44px;
@@ -75,8 +80,10 @@ button:hover {
 
 .hero button {
   background: #2196F3;
-  color: #ffffff;
+  color: var(--white-color);
 
+  font-size: 16px;
+  font-family: inherit;
   font-weight: 700;
   line-height: 1.9;
   text-align: center;
@@ -89,13 +96,11 @@ button:hover {
   color: var(--title-color);
 
   font-weight: 700;
-  font-size: 14px;
   letter-spacing: 1.1;
   text-transform: uppercase;
 }
 
 .advantages-text {
-  font-size: 14px;
   line-height: 1.7;
 }
 
@@ -113,6 +118,7 @@ button:hover {
 /* Team */
 .team-position,
 .team-name {
+  font-size: 16px;
   line-height: 1.2;
   text-align: center;
 }
@@ -126,21 +132,22 @@ button:hover {
 
 .portfolio .button {
   color: var(--title-color);
-  background-color: #f5f4fa;
+  background-color: #F5F4FA;
 
+  font-family: inherit;
   font-weight: 500;
   line-height: 1.6;
   text-align: center;
 }
 
 .portfolio .button:hover,
-.portfolio .button:active {
-  color: #ffffff;
+.portfolio .button:focus {
+  color: var(--white-color);
   background-color: var(--link-color);
 }
 
 .button.active {
-  color: #ffffff;
+  color: var(--white-color);
   background-color: var(--link-color);
 }
 
@@ -154,12 +161,22 @@ button:hover {
 }
 
 .portfolio-text {
+  font-size: 16px;
   line-height: 1.9;
 }
 
 /* Footer */
+.footer {
+  background-color: #2F303A;
+}
 
 .address .link{
-  font-size: 14px;
   line-height: 24px;
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.link.street,
+.footer .studio {
+  color: var(--white-color);
 }
